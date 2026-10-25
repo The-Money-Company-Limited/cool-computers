@@ -31,11 +31,13 @@ codex plugin marketplace add The-Money-Company-Limited/cool-computers
 codex plugin add cool-computers@cool-computers
 ```
 
-**Any agent that reads skills**
+**Any agent that reads skills** (the skill only)
 
 ```sh
 npx skills add The-Money-Company-Limited/cool-computers
 ```
+
+This installs the skill without the MCP server: connect the server too, as below.
 
 **MCP server only**, without the skill:
 

@@ -14,6 +14,8 @@
 - `cool_list_files` with `computer` and an optional `path` (default `/home/runtime/app`; relative paths start there) lists a folder, a page at a time: when `eof` is false, call again with `offset` set to `next_offset`.
 - `cool_read_file` with `computer` and `path` reads one file of at most 2 MiB, up to 32 KiB per call. When the result says `eof: false`, call again with `offset` set to `next_offset` and the `version` from the first chunk.
 - Both read the live release of a site without a VM, and the disk of a computer with a VM. They never give a site a VM.
+- `cool_stat_file` shows one file's type, size and time; `cool_delete_file` (`recursive` for a folder) deletes from a site's live release, as a new release, or from a VM's disk.
+- `cool_list_releases` lists a site's releases, newest first; `cool_promote_release` with a `number` makes an earlier one live again, to roll back.
 - Pages served to browsers carry a comments layer under `/__cool/`; it is not one of the site's files. Never copy it into what you publish.
 
 ## cool.json

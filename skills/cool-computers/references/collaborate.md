@@ -17,6 +17,7 @@ The owner, everyone the site is shared with, and, on a public site, anyone signe
    When comments contradict each other (one says make it blue, another that green matches the logo), do not pick one: change nothing for them and resolve each `asked` with one short question for the owner that names both; once the owner has answered, your reply says what was decided and why.
 6. Pull again while the result says `more`. If a resolve answers that the comment changed since you pulled (for example someone replied, or another agent resolved it), pull again without `after` (a job from its first comment) and resolve with the new version.
 7. `cool_reply_comment` (`computer`, `comment_id`, `text`) adds a message to a thread without answering it; the comment keeps its state. It returns the comment's `id` and `state`, not its `version`: pull the comments again without `after` and read it before you resolve it, since someone may have replied meanwhile.
+8. `cool_reopen_comment` (`computer`, `comment_id`, the `version` your `asked` resolve returned) opens a comment you asked about again. `cool_delete_comment` (`computer`, `comment_id`) deletes a comment; only when the owner asks.
 
 ## Comments the owner sends you
 
@@ -27,12 +28,13 @@ When you can also run the `cool` CLI signed in as the user, after you publish a 
 - `cool_leave_comment` with `computer`, `page` (default `/`), a `selector` of the one element it is about, and `text`. It shows under your MCP client's name, not the user's, and asks nobody to do anything.
 - A selector is up to 12 steps (300 bytes) joined by ` > `. Each step is an optional tag or `*`, then optionally `#id` or `[id="x"]`, up to two `.class`, `[data-testid="x"]` and `:nth-of-type(n)`. It must match exactly one element. Nothing else is accepted.
 - To point something out to a person (circle it, underline it, strike it out), draw a comment instead of changing the page: pass `marks` (1 to 5), each naming its element in `el` (same selector rules) and a `shape` fitted to it on every screen: `ring` (around it), `box` (around it, square), `underline`, `strike` (through it) or `cross` (over it). With `marks`, `selector` may be left out, and `text` is optional. Never change the page itself to annotate it.
+- To mark a part of the page that is no one element, pass `area` (`x`, `y`, `w`, `h` in percent of the page) instead of `selector` and `marks`.
 - For anything no shape fits, give `path` in place of `shape`, drawn in its element's own box: `0 0` its top-left and `1000 1000` its bottom-right whatever its size on screen, numbers below 0 or past 1000 outside it, in whole numbers as `M x y L x y`, a new `M` for each stroke. Only `M` and `L`: no curves (`C`, `Q`, `A`) and no `Z`. An underline is `M0 1080 L1000 1080`.
 - Text is at most 1000 bytes. A site holds at most 50 open comments; a thread at most 20 messages.
 
 ## Share with people
 
-- `cool_set_computer_visibility` makes a site `private` (only the owner and the people it is shared with) or `public`.
+- `cool_set_computer_visibility` makes a site `private` (only the owner and the people it is shared with) or `public`. `cool_list_shares` shows its visibility and everyone who can open it.
 - `cool_share` with `computer`, the person's exact `email` and `access: "can_use"` gives them access; `access: "none"` takes it away, and the result lists everyone who can open it. Ask the user for the exact address; there is no invite link. Most people get an email invitation, which also lets them sign up; calling it again sends no second email.
 - People it is shared with can open it and comment, and once the site has a VM they can use its terminal as root and read every file on it. They cannot publish to it, delete it, share it or give it a VM. A shared site gets none of the account's secret sets or integrations, except the set its own `cool.json` names for its functions.
 

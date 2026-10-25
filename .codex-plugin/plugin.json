@@ -1,0 +1,41 @@
+{
+  "name": "cool-computers",
+  "version": "0.1.0",
+  "description": "Put what you make online with Cool Computers: publish pages and sites, work on them with people through comments and drawings, and give one a VM when the work needs a server, a bot or a schedule.",
+  "author": {
+    "name": "The Money Company Limited",
+    "url": "https://www.cool.computer"
+  },
+  "homepage": "https://www.cool.computer/docs",
+  "repository": "https://github.com/The-Money-Company-Limited/cool-computers",
+  "keywords": [
+    "artifacts",
+    "publishing",
+    "mcp",
+    "collaboration",
+    "vm"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Cool Computers",
+    "shortDescription": "Publish what you make and work on it with people",
+    "longDescription": "Put what you make online with Cool Computers: publish pages and sites, work on them with people through comments and drawings, and give one a VM when the work needs a server, a bot or a schedule.",
+    "developerName": "The Money Company Limited",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://www.cool.computer",
+    "privacyPolicyURL": "https://www.cool.computer/privacy",
+    "termsOfServiceURL": "https://www.cool.computer/terms",
+    "defaultPrompt": [
+      "Make a page for my project and put it online.",
+      "Read the comments on my site and handle them.",
+      "List my sites and computers."
+    ],
+    "logo": "./assets/icon.svg"
+  },
+  "license": "MIT"
+}

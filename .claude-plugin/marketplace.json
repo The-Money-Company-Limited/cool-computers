@@ -1,0 +1,16 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "cool-computers",
+  "description": "Cool Computers' plugin for Claude Code: its MCP server and skill.",
+  "owner": {
+    "name": "The Money Company Limited",
+    "url": "https://www.cool.computer"
+  },
+  "plugins": [
+    {
+      "name": "cool-computers",
+      "source": "./",
+      "description": "Put what you make online with Cool Computers: publish pages and sites, work on them with people through comments and drawings, and give one a VM when the work needs a server, a bot or a schedule."
+    }
+  ]
+}

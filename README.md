@@ -37,7 +37,7 @@ codex plugin add cool-computers@cool-computers
 npx skills add The-Money-Company-Limited/cool-computers
 ```
 
-This installs the skill without the MCP server: connect the server too, as below.
+This installs the skill without the MCP server. With the [`cool` CLI](https://www.cool.computer/install) installed, the skill sends the agent to `cool skill`; otherwise connect the server too, as below.
 
 **MCP server only**, without the skill:
 
@@ -56,7 +56,7 @@ Ask your agent:
 List my Cool Computers sites and computers. Don't change anything.
 ```
 
-It should call `cool_list_computers` and answer with your list.
+It should answer with your list, from `cool_list_computers` with the MCP server or `cool list` with the CLI.
 
 ## More for agents
 

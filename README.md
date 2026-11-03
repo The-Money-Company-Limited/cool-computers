@@ -61,7 +61,7 @@ It should answer with your list, from `cool_list_computers` with the MCP server 
 ## More for agents
 
 - [llms.txt](https://www.cool.computer/llms.txt): the index of everything an agent can read
-- [agents.md](https://www.cool.computer/agents.md): the step-by-step runbook, from sign-up to a first published page
+- [agents.md](https://www.cool.computer/agents.md): the step-by-step runbook, from a first published page to signing up and keeping it
 - [Documentation](https://cool.computer/docs) and its MCP connection guide, [/use/mcp](https://cool.computer/docs/use/mcp)
 
 ## Issues

@@ -4,7 +4,7 @@ A site is where the user, the people they invite and agents work on the same thi
 
 ## Who can comment
 
-The owner, everyone the site is shared with, and, on a public site, anyone signed in to Cool Computers. Comments only appear on `<name>.cool.computer`, not on a custom domain or a numbered release URL. Sign-up is invite-only for now, so a person with no account can comment only once invited (`cool_share` sends the invitation). They are on by default. If the owner switched them off, tell the user; only the owner can turn them on again, in the Cool Computers app.
+The owner, everyone the site is shared with, and, on a public site, anyone signed in to Cool Computers. Comments only appear on `<name>.cool.computer`, not on a custom domain or a numbered release URL. While Cool Computers is full, a person with no account can comment only once invited (`cool_share` sends the invitation). They are on by default. If the owner switched them off, tell the user; only the owner can turn them on again, in the Cool Computers app.
 
 ## Read and handle comments
 

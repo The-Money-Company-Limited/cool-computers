@@ -11,7 +11,7 @@ Nothing is installed or run locally besides these files.
 
 ## Before you start
 
-You need a Cool Computers account. Sign-up is invite-only for now: join the waitlist at [cool.computer](https://www.cool.computer). Without an account, an agent can still publish with the [`cool` CLI](https://www.cool.computer/install) and give you a link to claim the site.
+You need a Cool Computers account. Sign up at [cool.computer](https://www.cool.computer). Without an account, an agent can still publish with the [`cool` CLI](https://www.cool.computer/install) and give you a link to claim the site.
 
 ## Install
 

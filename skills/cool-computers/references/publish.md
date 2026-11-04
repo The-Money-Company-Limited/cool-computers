@@ -24,7 +24,7 @@ A `cool.json` among the files configures the site. It is never served.
 
 - `{"spa": true}` serves `index.html` for paths that are not files, for apps that route in the browser.
 - `{"functions": "api/worker.js"}` runs one bundled ES module (`export default { fetch(request, env) }`, at most 1 MiB) for `/api` and every request under `/api/`, at the edge, with no VM. Use only Web-standard APIs. Each request gets 50 ms of CPU and 20 outgoing requests; they cannot reach Cool Computers' own hosts or IP addresses.
-- `"database": true` next to `functions` gives them a SQLite database as `env.DB`; every `env.DB` call returns a promise, so `await` it. Query it with `cool_query_database`; a query can change data, so if one times out, check before retrying.
+- `"database": true` next to `functions` gives them a SQLite database as `env.DB`; every `env.DB` call returns a promise, so `await` it. Read it with `cool_read_database` and change it with `cool_write_database`; a write that times out may have completed, so check before retrying.
 - `"secrets": "<set>"` next to `functions` gives them each plain key of an account secret set as `env.<KEY>` (at most 64 keys of 5,000 bytes). Create or replace the set with `cool_set_secrets` (`secret_set`, `values`); it replaces the whole set and never returns values.
 - `env.EMAIL.send({ to, subject, text, html, idempotencyKey })` sends from the site's address, as `cool_send_email` does; `EMAIL` is reserved as a secret key.
 - Only the site's own URL gives functions their secrets, database and `EMAIL`; a numbered release URL runs them without these.

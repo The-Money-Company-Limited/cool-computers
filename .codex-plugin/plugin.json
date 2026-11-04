@@ -28,6 +28,7 @@
       "Write"
     ],
     "websiteURL": "https://www.cool.computer",
+    "supportURL": "https://www.cool.computer/contact",
     "privacyPolicyURL": "https://www.cool.computer/privacy",
     "termsOfServiceURL": "https://www.cool.computer/terms",
     "defaultPrompt": [
@@ -35,7 +36,8 @@
       "Read the comments on my site and handle them.",
       "List my sites and computers."
     ],
-    "logo": "./assets/icon.svg"
+    "logo": "./assets/icon.svg",
+    "composerIcon": "./assets/icon.svg"
   },
   "license": "MIT"
 }

@@ -5,7 +5,7 @@ Use a VM only when the work needs a process that keeps running, a schedule, a lo
 ## What gives a VM
 
 - `cool_create_computer` (`name`, up to 63 lowercase letters, digits and single hyphens; `visibility`; `auto_delete_after` such as `2h`, or left out for never) makes a new computer with a VM. It serves nothing until a program runs. For a page or a site, use `cool_publish` instead, with `visibility: "private"` for a private one.
-- `cool_give_vm` (`computer`) or `cool_run_service` on a site, or a publish whose `cool.json` has `run`, gives that site an always-on VM; the result says so. Only the owner can do this. The account's first VM starts its 72-hour trial, with no card; after it, VMs need a subscription.
+- `cool_give_vm` (`computer`) or `cool_run_service` on a site, or a publish whose `cool.json` has `run`, gives that site an always-on VM; the result says so. Only the owner can do this. VMs need Pro (`cool billing upgrade`); on Free it fails with `pro_required`.
 - Nothing else gives a VM: `cool_exec` and `cool_expose_port` on a site without a VM are refused (`needs_vm`), and the file tools never do.
 - When no host has room for a new VM, the call is retried on every host for up to 30 seconds, then fails with nothing changed: try again in a minute.
 

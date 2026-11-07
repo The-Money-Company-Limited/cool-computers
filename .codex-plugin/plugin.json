@@ -1,7 +1,7 @@
 {
   "name": "cool-computers",
   "version": "0.1.0",
-  "description": "Put what you make online with Cool Computers: publish pages and sites, work on them with people through comments and drawings, and give one a VM when the work needs a server, a bot or a schedule.",
+  "description": "Put what you make online: dashboards, artifacts and apps that need a virtual machine. Collaborate and draw on the app itself, and your comments go back to your agent. Share with your team instantly and get their input.",
   "author": {
     "name": "The Money Company Limited",
     "url": "https://www.cool.computer"
@@ -20,7 +20,7 @@
   "interface": {
     "displayName": "Cool Computers",
     "shortDescription": "Publish what you make and work on it with people",
-    "longDescription": "Put what you make online with Cool Computers: publish pages and sites, work on them with people through comments and drawings, and give one a VM when the work needs a server, a bot or a schedule.",
+    "longDescription": "Put what you make online: dashboards, artifacts and apps that need a virtual machine. Collaborate and draw on the app itself, and your comments go back to your agent. Share with your team instantly and get their input.",
     "developerName": "The Money Company Limited",
     "category": "Developer Tools",
     "capabilities": [

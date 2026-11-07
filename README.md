@@ -1,6 +1,6 @@
 # Cool Computers plugin
 
-Cool Computers puts what your agent makes online at `name.cool.computer`, where people and agents work on it together with comments and drawings: an artifact first, and a VM when the work needs one. This plugin connects Claude Code, Codex and other agents to it.
+Cool Computers puts what your agent makes online at `name.cool.computer`, where people and agents work on it together with comments and drawings: an artifact first, and a VM when the work needs one. This plugin connects Claude Code, Codex, Gemini CLI and other agents to it.
 
 ## What it ships
 
@@ -30,6 +30,14 @@ Then run `/mcp` and sign in to Cool Computers.
 codex plugin marketplace add The-Money-Company-Limited/cool-computers
 codex plugin add cool-computers@cool-computers
 ```
+
+**Gemini CLI**
+
+```sh
+gemini extensions install https://github.com/The-Money-Company-Limited/cool-computers
+```
+
+Then run `/mcp auth cool-computers` and sign in to Cool Computers.
 
 **Any agent that reads skills** (the skill only)
 

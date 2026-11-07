@@ -1,0 +1,11 @@
+{
+  "name": "cool-computers",
+  "version": "0.1.0",
+  "description": "Put what you make online: dashboards, artifacts and apps that need a virtual machine. Collaborate and draw on the app itself, and your comments go back to your agent. Share with your team instantly and get their input.",
+  "mcpServers": {
+    "cool-computers": {
+      "httpUrl": "https://api.cool.computer/mcp"
+    }
+  },
+  "contextFileName": "skills/cool-computers/SKILL.md"
+}

@@ -50,11 +50,11 @@ This installs the skill without the MCP server. With the [`cool` CLI](https://ww
 **MCP server only**, without the skill:
 
 ```sh
-claude mcp add --scope user --transport http cool https://api.cool.computer/mcp
-codex mcp add cool --url https://api.cool.computer/mcp
+claude mcp add --scope user --transport http cool-computers https://api.cool.computer/mcp
+codex mcp add cool-computers --url https://api.cool.computer/mcp
 ```
 
-In Codex, also add `required = true` under the server's `[mcp_servers.<name>]` table in `~/.codex/config.toml`, so Codex waits for Cool Computers' tools before it starts a task. Point any other MCP client at `https://api.cool.computer/mcp` (Streamable HTTP, OAuth).
+In Codex, also add `required = true` under `[mcp_servers.cool-computers]` in `~/.codex/config.toml`, so Codex waits for Cool Computers' tools before it starts a task. Point any other MCP client at `https://api.cool.computer/mcp` (Streamable HTTP, OAuth).
 
 ## Check it works
 
@@ -69,8 +69,9 @@ It should answer with your list, from `cool_list_computers` with the MCP server 
 ## More for agents
 
 - [llms.txt](https://www.cool.computer/llms.txt): the index of everything an agent can read
-- [agents.md](https://www.cool.computer/agents.md): the step-by-step runbook, from a first published page to signing up and keeping it
-- [Documentation](https://cool.computer/docs) and its MCP connection guide, [/use/mcp](https://cool.computer/docs/use/mcp)
+- [setup.md](https://www.cool.computer/setup.md): the step-by-step setup, from a first published page to signing up and keeping it
+- [agents.md](https://www.cool.computer/agents.md): the agent guide for everything after setup
+- [Documentation](https://cool.computer/docs), with a setup page for each agent and chat app under [Connect your agent](https://cool.computer/docs/agents/overview)
 
 ## Issues
 

@@ -1,6 +1,6 @@
 # Cool Computers plugin
 
-Cool Computers puts what your agent makes online at `name.cool.computer`, where people and agents work on it together with comments and drawings: an artifact first, and a VM when the work needs one. This plugin connects Claude Code, Codex, Gemini CLI and other agents to it.
+Cool Computers puts what your agent makes online at `name.cool.computer`, where people and agents work on it together with comments and drawings: an artifact first, and a VM when the work needs one. This plugin connects Claude, Claude Code, Codex, ChatGPT, Cursor, Gemini CLI and other agents to it.
 
 ## What it ships
 
@@ -15,29 +15,49 @@ You need a Cool Computers account. Sign up at [cool.computer](https://www.cool.c
 
 ## Install
 
-**Claude Code**
+Cool Computers is listed in each app's store as Cool Computers, with the id `cool-computers`.
+
+**Claude Code**, from Anthropic's official marketplace:
 
 ```text
-/plugin marketplace add The-Money-Company-Limited/cool-computers
-/plugin install cool-computers@cool-computers
+/plugin install cool-computers@claude-plugins-official
 ```
 
-Then run `/mcp` and sign in to Cool Computers.
+Review the plugin and choose Install for you, then run `/mcp` and sign in to Cool Computers.
 
-**Codex**
+**Claude** (claude.ai and the desktop app), the connector: open Customize, then Connectors, choose Discover, search for Cool Computers and connect it. In your new chat, open + → Connectors and make sure Cool Computers is on.
 
-```sh
-codex plugin marketplace add The-Money-Company-Limited/cool-computers
-codex plugin add cool-computers@cool-computers
-```
+**Claude**, the plugin with the skill: Customize → Plugins → Discover, search Cool Computers, select it and choose Add.
 
-**Gemini CLI**
+**Codex**: in Codex CLI, run `/plugins`, find Cool Computers, install it and start a new session. In the ChatGPT desktop app, open Plugins, install Cool Computers and start a new Codex chat.
+
+**ChatGPT**: open [Plugins](https://chatgpt.com/plugins), find Cool Computers and choose +.
+
+**Cursor**: install it from the [Cursor Marketplace](https://cursor.com/marketplace/cool-computers), or type `/add-plugin cool-computers` in Cursor's agent.
+
+**Grok**: open [Connectors](https://grok.com/connectors), choose New Connector and search for Cool Computers.
+
+**Gemini CLI**, from the [extensions gallery](https://geminicli.com/extensions/browse/):
 
 ```sh
 gemini extensions install https://github.com/The-Money-Company-Limited/cool-computers
 ```
 
 Then run `/mcp auth cool-computers` and sign in to Cool Computers.
+
+**Add it by hand**, from this repository's marketplace.
+
+Claude Code, which installs it for you in every project (then run `/mcp` and sign in):
+
+```sh
+claude plugin install cool-computers --marketplace The-Money-Company-Limited/cool-computers
+```
+
+Codex:
+
+```sh
+codex plugin marketplace add The-Money-Company-Limited/cool-computers && codex plugin add cool-computers@cool-computers
+```
 
 **Any agent that reads skills** (the skill only)
 

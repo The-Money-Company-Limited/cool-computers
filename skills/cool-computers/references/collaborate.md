@@ -40,8 +40,8 @@ When you can also run the `cool` CLI signed in as the user, after you publish a 
 
 - `cool_set_computer_visibility` makes a site `private` (only the owner and the people it is shared with) or `public`. `cool_list_shares` shows its visibility and everyone who can open it.
 - `cool_share` with `computer`, the person's exact `email` and `access: "can_use"` gives them access; `access: "none"` takes it away, and the result lists everyone who can open it. Ask the user for the exact address; there is no invite link. Most people get an email invitation, which also lets them sign up; calling it again sends no second email.
-- People it is shared with can open it and comment, and once the site has a VM they can use its terminal as root and read every file on it. They cannot publish to it, delete it, share it or give it a VM. A shared site gets none of the account's secret sets or integrations, except the set its own `cool.json` names for its functions.
+- People it is shared with can open it and comment, and once the site has a VM they can use its terminal as root and read every file on it, including the computer's mail, which they can also send from its address. They cannot publish to it, delete it, share it or give it a VM. A shared site gets none of the account's secret sets or integrations, except the set its own `cool.json` names for its functions.
 
 ## Operator
 
-Operator is the account's own agent in the Cool Computers app. On a comment, the owner can press Ask Operator to hand it the comments. The user can also chat with it in the app, by email from their own verified address, or through Slack, Telegram or WhatsApp once linked.
+Operator is the account's own agent in the Cool Computers app. On a comment, the owner can press Send to Operator to hand it the comments. The user can also chat with it in the app, by email from their own verified address, or through Slack, Telegram or WhatsApp once linked.

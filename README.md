@@ -9,6 +9,8 @@ Cool Computers puts what your agent makes online at `name.cool.computer`, where 
 
 Nothing is installed or run locally besides these files.
 
+For Claude Code installations from this repository, plugin updates follow the source revision; the manifest does not pin a version. Refresh the plugin and reload it in Claude Code to pick up changed guidance.
+
 ## Before you start
 
 You need a Cool Computers account. Sign up at [cool.computer](https://www.cool.computer). Without an account, an agent can still publish with the [`cool` CLI](https://www.cool.computer/install) and give you a link to claim the site.

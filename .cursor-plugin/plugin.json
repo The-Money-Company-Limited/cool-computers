@@ -1,7 +1,6 @@
 {
   "name": "cool-computers",
   "displayName": "Cool Computers",
-  "version": "0.1.0",
   "description": "Put what you make online: dashboards, artifacts and apps that need a virtual machine. Collaborate and draw on the app itself, and your comments go back to your agent. Share with your team instantly and get their input.",
   "author": {
     "name": "The Money Company Limited",
@@ -10,8 +9,15 @@
   "homepage": "https://www.cool.computer",
   "repository": "https://github.com/The-Money-Company-Limited/cool-computers",
   "license": "MIT",
-  "keywords": ["artifacts", "publishing", "mcp", "collaboration", "vm"],
+  "keywords": [
+    "artifacts",
+    "publishing",
+    "mcp",
+    "collaboration",
+    "vm"
+  ],
   "logo": "assets/icon.svg",
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json"
+  "mcpServers": "./.mcp.json",
+  "version": "0.1.66"
 }

@@ -9,7 +9,7 @@ Cool Computers puts what your agent makes online at `name.cool.computer`, where 
 
 Nothing is installed or run locally besides these files.
 
-For Claude Code installations from this repository, plugin updates follow the source revision; the manifest does not pin a version. Refresh the plugin and reload it in Claude Code to pick up changed guidance.
+For Claude Code installations from this repository, plugin updates follow the source revision; the manifest does not pin a version. Refresh the plugin and reload it in Claude Code to pick up changed guidance. The Cursor, Codex and Gemini CLI manifests carry a version, `0.1.<n>`, where `n` counts the changes to the plugin; it rises with every change published here.
 
 ## Before you start
 

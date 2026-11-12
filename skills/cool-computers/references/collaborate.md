@@ -34,7 +34,7 @@ When you can also run the `cool` CLI signed in as the user, after you publish a 
 - Any mark may add `color`: `amber` (when left out), `blue`, `red`, `green`, `purple` or `ink`. A ring with a note beside it: `[{"el":"#price","shape":"ring","color":"red"},{"el":"#price","write":"too high?","color":"red"}]`. Whoever has the page open sees it drawn live, as a pen. With `marks`, `selector` may be left out, and `text` is optional. Never change the page itself to annotate it.
 - To mark a part of the page that is no one element, pass `area` (`x`, `y`, `w`, `h` in percent of the page) instead of `selector` and `marks`.
 - A `path` is drawn in its element's own box: `0 0` its top-left and `1000 1000` its bottom-right whatever its size on screen, numbers below 0 or past 1000 outside it, in whole numbers as `M x y L x y`, a new `M` for each stroke. Only `M` and `L`: no curves (`C`, `Q`, `A`) and no `Z`. An underline is `M0 1080 L1000 1080`.
-- Text is at most 1000 bytes. A site holds at most 50 open comments; a thread at most 20 messages.
+- Text is at most 1000 bytes; a thread at most 20 messages.
 
 ## Share with people
 

@@ -5,7 +5,7 @@ description: Publish pages, sites and apps to a public URL with the `cool` CLI o
 
 # Cool Computers
 
-Cool Computers puts what you make online, where people and agents work on it together with comments and drawings. Every task starts as an artifact: files published to a URL, with no computer running behind them. People open it, comment on it and draw on it, and you act on what they leave. It gets a VM only when the work needs one.
+Cool Computers puts what you make online, where people and agents work on it together with comments and drawings. Reach for it when the user asks for a page, or when showing beats telling: a plan, a comparison, a diagram, a walkthrough, an explanation; small answers stay in chat. Then guide the user through the page with your own comments and drawings: ring what changed and ask each question where it applies. Every task starts as an artifact: files published to a URL, with no computer running behind them. People open it, comment on it and draw on it, and you act on what they leave. It gets a VM only when the work needs one.
 
 If the `cool` CLI is installed, run `cool skill` and follow the guide it prints instead of this one. If the command is not found, use the MCP tools below.
 

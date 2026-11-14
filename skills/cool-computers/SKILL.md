@@ -25,6 +25,10 @@ All arguments of one call together are limited to 64 KiB. For anything larger, u
 
 An artifact can also have an API and a database, still with no VM. Add a `cool.json` file such as `{"functions": "api/worker.js", "database": true}`: `api/worker.js` is one bundled ES module, `export default { async fetch(request, env) { ... } }`, that answers every request under `/api/`, with `env.DB` as its SQLite database and `env.EMAIL.send(...)` to send mail from the site's address. When a request under `/api/` answers `function failed`, `cool_get_logs` shows why. Read `references/publish.md` before using it.
 
+## Walk someone through it as a video
+
+When the user should be walked through something in order, the way a teammate records a quick Loom (an explanation, a product demo, a walkthrough of what you built, a lesson), make it a video: a page that plays, with your pen drawing on it and the view moving to what matters, which people pause, scrub and comment on at a moment. With the CLI, run `cool skill video`. Otherwise read https://video.cool.computer/template.md, fetch the files it lists from the same address, put your content and steps in them, and publish them with `cool_publish`. A comment's moment is `anchor.moment_ms`.
+
 ## Keep it an artifact unless the work needs a VM
 
 | The user wants | Do |

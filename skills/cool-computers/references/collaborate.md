@@ -44,4 +44,4 @@ When you can also run the `cool` CLI signed in as the user, after you publish a 
 
 ## Operator
 
-Operator is the account's own agent in the Cool Computers app. On a comment, the owner can press Ask Operator to hand it the comments. The user can also chat with it in the app, by email from their own verified address, or through Slack, Telegram or WhatsApp once linked.
+Operator is the account's own agent in the Cool Computers app. On a comment, the owner can press Ask Operator to hand it the comments. The user can also chat with it in the app, by email from their own verified address, or through Slack or Telegram once linked.

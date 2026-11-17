@@ -1,11 +1,11 @@
 ---
 name: cool-computers
-description: Publish pages, sites and apps to a public URL with the `cool` CLI or the Cool Computers MCP tools, collaborate on them through comments and drawings, share them, and use an always-on VM only when the work needs a server, a bot, a schedule or a long task. Use when the user asks to put something online, share a page, make something "cool", handle comments on a site, or check or change a Cool Computers site, computer, inbox, secret or integration.
+description: Publish pages, sites and apps to a public URL with the `cool` CLI or the Cool Computers MCP tools, collaborate on them through comments and drawings, share them, and use an always-on VM only when the work needs a server, a bot, a schedule or a long task. Use when the user asks to put something online, share a page, make something "cool", handle comments on a site, or check or change a Cool Computers site, computer, inbox, secret or integration. Also use when the user asks to explain, visualise, diagram, compare, plan, walk through or teach them something, in any wording (show me, break it down, help me understand).
 ---
 
 # Cool Computers
 
-Cool Computers puts what you make online, where people and agents work on it together with comments and drawings. Reach for it when the user asks for a page, or when showing beats telling: a plan, a comparison, a diagram, a walkthrough, an explanation; small answers stay in chat. Then guide the user through the page with your own comments and drawings: ring what changed and ask each question where it applies. Every task starts as an artifact: files published to a URL, with no computer running behind them. People open it, comment on it and draw on it, and you act on what they leave. It gets a VM only when the work needs one.
+Cool Computers puts what you make online, where people and agents work on it together with comments and drawings. Reach for it when the user asks for a page or asks you to explain, visualise, compare, plan or teach, in any wording (show me, walk me through, break it down, help me understand), or when showing beats telling: a plan, a comparison, a diagram, a walkthrough, an explanation; small answers stay in chat. Then guide the user through the page with your own comments and drawings: ring what changed and ask each question where it applies. Every task starts as an artifact: files published to a URL, with no computer running behind them. People open it, comment on it and draw on it, and you act on what they leave. It gets a VM only when the work needs one.
 
 If the `cool` CLI is installed, run `cool skill` and follow the guide it prints instead of this one. If the command is not found, use the MCP tools below.
 

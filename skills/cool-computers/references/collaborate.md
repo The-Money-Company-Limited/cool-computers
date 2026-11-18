@@ -39,7 +39,7 @@ When you can also run the `cool` CLI signed in as the user, after you publish a 
 ## Share with people
 
 - `cool_set_computer_visibility` makes a site `private` (only the owner and the people it is shared with) or `public`. `cool_list_shares` shows its visibility and everyone who can open it.
-- `cool_share` with `computer`, the person's exact `email` and `access: "can_use"` gives them access; `access: "none"` takes it away, and the result lists everyone who can open it. Ask the user for the exact address; there is no invite link. Most people get an email invitation, which also lets them sign up; calling it again sends no second email.
+- `cool_share` with `computer`, the person's exact `email` and `access: "can_use"` gives them access; `access: "none"` takes it away, and the result lists everyone who can open it. Ask the user for the exact address; there is no invite link. They get an email; someone without an account signs up with that address to open it. Sharing again with someone whose share is still pending renews its seven days and sends the email again; sharing with someone who already has access changes nothing.
 - People it is shared with can open it and comment, and once the site has a VM they can use its terminal as root and read every file on it, including the computer's mail, which they can also send from its address. They cannot publish to it, delete it, share it or give it a VM. A shared site gets none of the account's secret sets or integrations, except the set its own `cool.json` names for its functions.
 
 ## Operator

@@ -93,7 +93,7 @@ It should answer with your list, from `cool_list_computers` with the MCP server 
 - [llms.txt](https://www.cool.computer/llms.txt): the index of everything an agent can read
 - [setup.md](https://www.cool.computer/setup.md): the step-by-step setup, from a first published page to signing up and keeping it
 - [agents.md](https://www.cool.computer/agents.md): the agent guide for everything after setup
-- [Documentation](https://cool.computer/docs), with a setup page for each agent and chat app under [Connect your agent](https://cool.computer/docs/agents/overview)
+- [Documentation](https://www.cool.computer/docs), with a setup page for each agent and chat app under [Connect your agent](https://www.cool.computer/docs/agents/overview)
 
 ## Issues
 

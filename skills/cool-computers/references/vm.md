@@ -19,7 +19,7 @@ What changes:
 
 ## The computer
 
-- 1 vCPU, Ubuntu 24.04, no swap. User `runtime` with passwordless `sudo`. Preinstalled: Python 3, Node 22, Go, git, gh, uv, build tools, Claude Code, Codex and Pi.
+- 2 vCPUs, Ubuntu 24.04, no swap. User `runtime` with passwordless `sudo`. Preinstalled: Python 3, Node 22, Go, git, gh, uv, build tools, Claude Code, Codex and Pi.
 - Memory: one VM can use up to the account's full 8 GiB (`free` shows 8 GiB), but all the account's computers share that one 8 GiB pool, and the account has at most 20 VMs. Memory a computer frees goes back to the pool, so an idle computer holds about 110 MiB. When the pool has too little room, giving another site a VM is refused at once (`account_memory_full`); stopping a program that holds memory, or deleting a computer, makes room.
 - Outbound internet is open by default; private network ranges are blocked. `cool_get_computer_network`, `cool_set_computer_network` and `cool_list_network_denials` show and change it.
 
